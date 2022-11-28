@@ -1,11 +1,10 @@
 #include "lists.h"
-#include "stdio.h"
+#include <stdio.h>
 
 /**
- * check_cycle - Checks if a linked list contains a cycle
- * @list: linked list to check from
- * Return: 1 if cycle is present, 0 if absent
- */
+ * check_cycle - checks if singly linked list is a cycle
+ * Return: 0 if no cycle, 1 is yes
+*/
 
 int check_cycle(listint_t *list)
 {
@@ -22,10 +21,11 @@ int check_cycle(listint_t *list)
 			a = a->next->next;
 			b = b->next;
 
-			if (a == b)
+			if (a == b) 
 				return (1);
 		}
 		else
 			return (0);
 	}
+
 }
