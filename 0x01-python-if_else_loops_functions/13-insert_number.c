@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * insert_number - inserts a number in a sorted
+ * insert_node - inserts a number in a sorted
  * singly linked list.
  * @head: head of the node/linked list
  * @number: number to insert
  * Return: NULL if function fails, else pointer to new node
  */
 
-listint_t *insert_number(listint_t **head, int number)
+listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *node = *head, *new;
 
