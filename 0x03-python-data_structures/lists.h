@@ -2,6 +2,10 @@
 #define LISTS_H
 
 #include "stdlib.h"
+<<<<<<< HEAD
+=======
+#include "stdio.h"
+>>>>>>> 3e8d699fde364baf324185d59a837187aca8d89f
 
 /**
  * struct listint_s - singly linked list
