@@ -6,14 +6,14 @@ def roman_to_int(roman_string):
         return 0
 
     num = 0
-    roman_dict = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    romdic = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
     for i, j in zip(roman_string, roman_string[1:]):
-        if i not in roman_dict.keys():
+        if i not in romdic.keys():
             return 0
-        elif roman_dict[i] >= roman_dict[j]:
-            num += roman_dict[i]
+        elif romdic[i] >= romdic[j]:
+            num += romdic[i]
         else:
-            num -= roman_dict[i]
-    num += roman_dict[roman_string[-1]]
+            num -= romdic[i]
+    num += romdic[roman_string[-1]]
     return num
