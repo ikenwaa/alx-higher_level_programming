@@ -11,4 +11,3 @@ def weight_average(my_list=[]):
         return (total/freq) if freq > 0 else 0
     else:
         return 0
-
