@@ -13,7 +13,7 @@ class Square:
         Attr:
             size: Size of the sides of the square.
         """
-        self. size = size
+        self.size = size
 
     @property
     def size(self):
