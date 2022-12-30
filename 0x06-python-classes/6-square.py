@@ -40,7 +40,7 @@ class Square:
     def position(self, val):
         '''Sets position to tuple if val if of 2 +ve ints'''
         if type(val) is not tuple or len(val) != 2 or \
-            type(val[0]) is not int or type(val[1]) is not int or \
+                type(val[0]) is not int or type(val[1]) is not int or \
                 val[0] < 0 or val[1] < 0:
                 raise TypeError("position must be a tuple of 2 positive integers")
         else:
