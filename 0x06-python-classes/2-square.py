@@ -3,7 +3,7 @@
 """2. Size validation"""
 
 
-class Square(self):
+class Square():
     """
     Definition of class, Square.
     """
