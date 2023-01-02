@@ -4,7 +4,6 @@
 
 class Rectangle:
     """Rectangle class"""
-    
     def __init__(self, width=0, height=0):
         """
         Initialize the Rectangle class.
@@ -28,9 +27,8 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("width must be an >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
-
 
     @property
     def height(self):
