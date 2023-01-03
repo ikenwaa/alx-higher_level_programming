@@ -19,7 +19,7 @@ class Rectangle:
         self.width = width
         self.height = height
         type(self).number_of_instances += 1
-        
+
     @property
     def width(self):
         '''Get the width of the rectangle'''
@@ -63,7 +63,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         rect = "\n".join([str(self.print_symbol) * self.__width
-                        for row in range(self.__height)])
+                          for row in range(self.__height)])
         return rect
 
     def __repr__(self):
@@ -81,7 +81,7 @@ class Rectangle:
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an instance of Rectangle") 
+            raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
